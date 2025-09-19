@@ -14,7 +14,7 @@ nltk.download('stopwords')
 nltk.download('vader_lexicon')
 
 # Load CSV
-file_path = r"C:\Users\User\Downloads\niText SMS PLATFORM - Monday Report.csv"
+file_path = r"C:\Users\User\Downloads\SMS PLATFORM.csv"
 df = pd.read_csv(file_path)
 
 # Define stopwords + extra conjunctions
@@ -106,4 +106,5 @@ plt.show()
 # ----------------------------
 output_path = r"C:\Users\User\Downloads\sentiment_resultsHg.csv"
 df.to_csv(output_path, index=False, encoding='utf-8-sig')
+
 print(f"\n✅ Results saved to: {output_path}")
